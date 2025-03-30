@@ -10,12 +10,10 @@ import { MatButtonModule } from '@angular/material/button';
 
 // Import Highlight.js
 import { HighlightModule, HIGHLIGHT_OPTIONS } from 'ngx-highlightjs';
-import typescript from 'highlight.js/lib/languages/typescript';
-const hljs = require('highlight.js/lib/core');
-const json = require('highlight.js/lib/languages/json');
+import hljs from 'highlight.js/lib/core';
+import javascript from 'highlight.js/lib/languages/javascript';
 
-hljs.registerLanguage('json', json);
-
+hljs.registerLanguage('javascript', javascript);
 @NgModule({ declarations: [
         AppComponent
     ],
